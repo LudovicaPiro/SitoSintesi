@@ -17,9 +17,11 @@ $(document).ready(function(){
 							 $(".whiteHover").hover(	
 							 							function(){$(".whiteHover").css({"color": "white", "border": "2px solid white" });
 							 										$(".categoryDescr").css("border-top-style", "none");
+                                  $(".categoryLinks").css("color", "white");
 							 										},
 							 							function(){$(".whiteHover").css({"color": "#F39200", "border": "2px solid #F39200"});
 							 										$(".categoryDescr").css("border-top-style", "none");
+                                  $(".categoryLinks").css("color", "#F39200");
 							 										},  											
     										 		); 
 							 $("#MAKE").hover(	
