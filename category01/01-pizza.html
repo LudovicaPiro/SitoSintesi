@@ -1,0 +1,536 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Pizza is on the house</title>
+		
+		<!-- metatags -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="title" content="Set-jetters United">
+		<meta name="description" content="Short description of max 150 characters.">
+		<meta name="keywords" content="physical internet, data visualization, internet infrastructure">
+		
+		<!-- Open Graph / Facebook metatags -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://densitydesign.github.io/teaching-dd15/course-results/es03/group04/">
+		<meta property="og:title" content="Set-jetters United">
+		<meta property="og:description" content="Short description of max 150 characters.">
+		<meta property="og:image" content="https://i.ibb.co/vhBWYwb/Physical-Internet-CORRETTA.jpg">
+		
+		<!-- Twitter metatags -->
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="https://densitydesign.github.io/teaching-dd15/course-results/es03/group04/">
+		<meta property="twitter:title" content="Set-jetters United">
+		<meta property="twitter:description" content="Short description of max 150 characters.">
+		<meta property="twitter:image" content="https://i.ibb.co/vhBWYwb/Physical-Internet-CORRETTA.jpg">
+		
+		<!-- link to Bootstrap css -->
+		<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+		
+		<!--Link to css files-->
+		<link href="../css/main.css" rel="stylesheet" type="text/css"/>
+				
+		<!-- link to fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700&display=swap" rel="stylesheet">
+		
+		<!-- link to Favicon -->
+		
+	</head>
+
+	<body>
+		
+		<!--start Header Area-->
+		<header class="nav-bar nav-bar-color" id="nav-content">
+			<nav class="container-fluid">
+				<div class="margin-fifty">
+					<div class="row">
+						<a class="col-xl-2" href="../index.html">
+							<img id="set-jetters-logo" src="../assets/images/Logo_w.png" alt="Set-jetters United logo"/>
+						</a>
+			
+						<div class="offset-xl-5 col-xl-5">
+							<div class="row">
+								<a href="behindthescene.html" class="bar-menu offset-xl-4 col-xl-5">BEHIND THE SCENE
+								</a>
+								<a href="javascript:void(0)" class="bar-menu col-xl-3" onclick="openNav()">CART
+									<img id="icon-backpack" src="../assets/images/icon-backpack.png" alt="Icon backpack"/>
+								</a>					
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+		
+		<!--CART POP-UP-->
+		<div id="mySidenav" class="sidenav">				
+			<div class="container-fluid">				  
+				<div class="cartcontent">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<h3>CART</h3>
+								
+					<div class="row cartelement">
+						<div class="col-xl-4">
+							<img class="img-fluid" src="../assets/images/cartsquare.png" alt="Image not supported"/>
+						</div>
+						<div class="col-xl-6">
+							<h5>PIZZA IS ON THE HOUSE <br> Breaking Bad</h5>
+							<div class="adress" style="display: flex;">
+								<i class="fas fa-map-marker-alt" style="padding-right: 10px; padding-top: 3px;"></i>
+								<p>3828 Piermont Dr, Albuquerque, New Mexico 87112 USA</p>
+							</div>
+						</div>
+						<div class="col-xl-2">
+							<h5>25,99€</h5>
+						</div>
+					</div>
+							
+					<div class="row cartelement">
+						<div class="col-xl-4">
+							<img class="img-fluid" src="../assets/images/cartsquare.png" alt="Image not supported"/>
+						</div>
+						<div class="col-xl-6">
+							<h5>PIZZA IS ON THE HOUSE <br> Breaking Bad</h5>
+							<div class="adress" style="display: flex;">
+								<i class="fas fa-map-marker-alt" style="padding-right: 10px; padding-top: 3px;"></i>
+								<p>3828 Piermont Dr, Albuquerque, New Mexico 87112 USA</p>
+							</div>
+						</div>
+						<div class="col-xl-2">
+							<h5>25,99€</h5>
+						</div>
+					</div>									
+					<a class="purchasebtn" href="javascript:void(0)" onclick="closeNav(); openMoral();">PURCHASE</a>								
+				</div>
+			</div>
+		</div>
+		
+		<!--MORAL POP-UP-->
+		<div id="mySidemoral" class="sidemoral">				
+			<div class="container-fluid">				  
+				<div class="cartcontent">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeMoral()">&times;</a>
+					<h3 class="margincards">MORALIST PAGE</h3>
+
+					<div class="moraltext">
+						<h4>We’d like to take the merit for coming up with this great activities, but actually they are all true! </h4> 
+									
+						<p>Somebody really threw pizza on the Walter White House and some other fan really took dirt from Burkittsville cemetery. Fans from all over the world love to visit their favourite film or TV series locations, but for the sake of the fandom, they can also become ruthless and disregard common sense. Everybody has the right to enjoy and visit these locations, so don’t be a toxic fan, respect the places and the people.
+						</p>
+										
+						<div style="margin-top: 100px;">
+							<p style="text-align: center;">Find out more about the project:</p>
+							<a href="behindthescene.html" class="moralbtn">BEHIND THE SCENE</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- start Section Area-->
+		<main class="main-content">
+			
+			<!--Tour description + Tour images-->
+			<section class="container-fluid">
+				
+				<div class="margin-fifty category-all">
+					<div class="row">
+						<!--Category Text-->
+						<article class="tour-text col-xl-5">
+							<div class="sticky">
+								<div class="category-title">
+									<p>PIZZA IS ON<br>THE HOUSE</p>
+								</div>
+								
+								<!--Tour description-->
+								<div class="tour-info">
+									<p>
+										<i class="fab fa-instagram"></i>  581 posts from #walterwhitehouse<br>
+										<i class="fas fa-map-marker-alt"></i>  3828 Piermont Dr, Albuquerque, New Mexico 87112 USA
+									</p>
+								</div>
+								
+								<div class="text-description">
+									<p>Wanna rage like Walter White? Then this is the activity for you. At the iconic White House you’ll be able to break bad and throw the authentic unsliced pizza on the house roof. The thrill doesn’t stop here: you may encounter “The Lady” the super nice cursing owner (in that case be ready to run). For the best experience we recommend buying a party pizza at Gino’s.</p>
+									
+									<h6>WHAT TO BRING:</h6>
+									<p>- Gino’s party pizza one or more, in case you miss<br>
+									- running shoes<br>
+									- extra cash for some blue sky</p>
+										
+									<h6>PRICE:</h6>
+									<p style="display: inline;">Gino's NY Style Party Pizza: 25€</p>
+			
+									<p style="display: inline;" id="tot-price">Tot: 25,99 €</p>
+								</div>
+								
+								<!--Calendar
+								<i class="far fa-calendar"></i>
+							
+								Tour quantity
+								<select class="tour-quantity">
+									<option value="0">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+								</select>-->
+							
+								<!--Add to cart-->							
+							
+							</div>
+						</article>
+				
+						<!--Tour images-->
+						<article class="category-cards offset-xl-1 col-xl-6">
+							
+							<!--Row #1-->
+							<div class="row margincards">
+								<p class="tag-title offset-xl-8 col-xl-4" style="color: #F39200;">Breaking Bad (2008)</p>
+								<div class="col-xl-12">
+									<img src="../assets/images/category03.jpg" alt="Image not supported" class="bordertop-film img-fluid"/>
+								</div>
+							</div>
+
+							<!--Row #2-->
+							<div class="row margincards">
+								<p class="tag-title offset-xl-8 col-xl-4">Real experience</p>
+								<div class="col-xl-12">
+									<img src="../assets/images/category03.jpg" alt="Image not supported" class="bordertop img-fluid"/>
+								</div>
+							</div>
+						
+							<!--Row #3-->
+							<div class="row margincards">
+								<div class="col-xl-12">
+									<img src="../assets/images/category03.jpg" alt="Image not supported" class="img-fluid"/>
+								</div>
+							</div>
+							
+							<!--Row #4-->
+							<div class="row">
+								<div class="col-xl-12">
+									<img src="../assets/images/category03.jpg" alt="Image not supported" class="img-fluid"/>
+								</div>
+							</div>	
+						</article>			
+					</div>
+				</div>
+			</section>
+			
+			<!--Reviews-->
+			<section class="container-fluid">
+				<div id="reviews" class="margin-hundred">
+					<h3 class="section-title">WHAT PEOPLE SAY</h3>
+					<div class="row top4">	
+ 		 		
+						<!--Review #1-->
+						<div class="col-md-4 col-xl-4">
+							<div class="text-container">
+									<div class="content hideContent">
+										 <p class="orangep">user: theodoreb <br>
+											source: TripAdvisor <br>
+											date: one month ago</p>
+										<h5>Very interesting. Very unpleasant owner</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  </p>
+								  </div>
+							<div class="show-more">
+								<a href="#!">show more</a>
+							</div>
+							</div>
+						</div>
+
+
+
+							<!--Review #2-->
+							<div class="col-md-4 col-xl-4">
+							<div class="text-container">
+									<div class="content hideContent">
+										 <p class="orangep">user: theodoreb <br>
+											source: TripAdvisor <br>
+											date: one month ago</p>
+										<h5>Very interesting. Very unpleasant owner</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  </p>
+								  </div>
+							<div class="show-more">
+								<a href="#!">show more</a>
+							</div>
+							</div>
+						</div>
+
+
+						<!--Review #3-->
+						<div class="col-md-4 col-xl-4">
+							<div class="text-container">
+									<div class="content hideContent">
+										 <p class="orangep">user: theodoreb <br>
+											source: TripAdvisor <br>
+											date: one month ago</p>
+										<h5>Very interesting. Very unpleasant owner</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  </p>
+								  </div>
+							<div class="show-more">
+								<a href="#!">show more</a>
+							</div>
+							</div>
+						</div>
+
+
+					</div>			
+						   </div>
+
+								</section>
+			
+						<!--Carousel-->
+			<section class="container-fluid">
+		
+			<!--Carousel Wrapper-->
+	<div id="multi-item-example" class="carousel slide carousel-multi-item" data-interval="false">
+		<h3 class="section-title" style="margin-left: 120px;">OTHER RELATED ACTIVITIES</h3>
+	
+	<div class="row top4">
+		
+		<div class="col-md-1 col-xl-1">
+			<a class="btn-floating" href="#multi-item-example" data-slide="prev">
+				<img class="freccia" src="../assets/images/arrow-left.png" alt="Image not supported">
+			</a>
+		</div>	
+		
+  <!--Slides-->
+  <div class="carousel-inner col-md-10 col-xl-10" role="listbox">
+
+    <!--First slide-->
+    <div class="carousel-item active">
+		<div class="row">
+			<a href="" class="col-md-4 col-xl-3 activitiycard">
+				<div class="img-hover-zoom">
+					<img class="img-fluid" src="../assets/images/cards/01-whenharrymetsally.jpg" alt="Image not supported">
+					<div class="textabove">
+						<p style="display: inline">New York</p>
+						<p class="post"> <i class="fab fa-instagram pr-2" ></i>8.237</p>
+						<h5>OH GOD, YES, YEEEEESSSSS!</h5>
+						<p style="display: inline">When Harry Met Sally</p>
+						<p class="price">20,99 €</p>
+					</div>
+				</div>
+			</a>
+
+			<a href="" class="col-md-4 col-xl-3 activitiycard">
+				<div class="img-hover-zoom">
+					<img class="img-fluid" src="../assets/images/cards/01-whenharrymetsally.jpg" alt="Image not supported">
+					<div class="textabove">
+						<p style="display: inline">New York</p>
+						<p class="post"> <i class="fab fa-instagram pr-2" ></i>8.237</p>
+						<h5>OH GOD, YES, YEEEEESSSSS!</h5>
+						<p style="display: inline">When Harry Met Sally</p>
+						<p class="price">20,99 €</p>
+					</div>
+				</div>
+			</a>
+	 
+			<a href="" class="col-md-4 col-xl-3 activitiycard">
+				<div class="img-hover-zoom">
+					<img class="img-fluid" src="../assets/images/cards/01-whenharrymetsally.jpg" alt="Image not supported">
+					<div class="textabove">
+						<p style="display: inline">New York</p>
+						<p class="post"> <i class="fab fa-instagram pr-2" ></i>8.237</p>
+						<h5>OH GOD, YES, YEEEEESSSSS!</h5>
+						<p style="display: inline">When Harry Met Sally</p>
+						<p class="price">20,99 €</p>
+					</div>
+				</div>
+			</a>
+	 
+			<a href="" class="col-md-4 col-xl-3 activitiycard">
+				<div class="img-hover-zoom">
+					<img class="img-fluid" src="../assets/images/cards/01-whenharrymetsally.jpg" alt="Image not supported">
+					<div class="textabove">
+						<p style="display: inline">New York</p>
+						<p class="post"> <i class="fab fa-instagram pr-2" ></i>8.237</p>
+						<h5>OH GOD, YES, YEEEEESSSSS!</h5>
+						<p style="display: inline">When Harry Met Sally</p>
+						<p class="price">20,99 €</p>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+    <!--/.First slide-->
+
+    <!--Second slide-->
+    <div class="carousel-item">
+		<div class="row">
+			<a href="" class="col-md-4 col-xl-3 activitiycard">
+				<div class="img-hover-zoom">
+					<img class="img-fluid" src="../assets/images/cards/01-whenharrymetsally.jpg" alt="Image not supported">
+					<div class="textabove">
+						<p style="display: inline">New York</p>
+						<p class="post"> <i class="fab fa-instagram pr-2" ></i>8.237</p>
+						<h5>OH GOD, YES, YEEEEESSSSS!</h5>
+						<p style="display: inline">When Harry Met Sally</p>
+						<p class="price">20,99 €</p>
+					</div>
+				</div>
+			</a>
+
+			<a href="" class="col-md-4 col-xl-3 activitiycard">
+				<div class="img-hover-zoom">
+					<img class="img-fluid" src="../assets/images/cards/01-whenharrymetsally.jpg" alt="Image not supported">
+					<div class="textabove">
+						<p style="display: inline">New York</p>
+						<p class="post"> <i class="fab fa-instagram pr-2" ></i>8.237</p>
+						<h5>OH GOD, YES, YEEEEESSSSS!</h5>
+						<p style="display: inline">When Harry Met Sally</p>
+						<p class="price">20,99 €</p>
+					</div>
+				</div>
+			</a>
+	 
+			<a href="" class="col-md-4 col-xl-3 activitiycard">
+				<div class="img-hover-zoom">
+					<img class="img-fluid" src="../assets/images/cards/01-whenharrymetsally.jpg" alt="Image not supported">
+					<div class="textabove">
+						<p style="display: inline">New York</p>
+						<p class="post"> <i class="fab fa-instagram pr-2" ></i>8.237</p>
+						<h5>OH GOD, YES, YEEEEESSSSS!</h5>
+						<p style="display: inline">When Harry Met Sally</p>
+						<p class="price">20,99 €</p>
+					</div>
+				</div>
+			</a>
+	 
+			<a href="" class="col-md-4 col-xl-3 activitiycard">
+				<div class="img-hover-zoom">
+					<img class="img-fluid" src="../assets/images/cards/01-whenharrymetsally.jpg" alt="Image not supported">
+					<div class="textabove">
+						<p style="display: inline">New York</p>
+						<p class="post"> <i class="fab fa-instagram pr-2" ></i>8.237</p>
+						<h5>OH GOD, YES, YEEEEESSSSS!</h5>
+						<p style="display: inline">When Harry Met Sally</p>
+						<p class="price">20,99 €</p>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+    <!--/.Second slide-->
+
+    <!--Third slide-->
+    <div class="carousel-item">
+		<div class="row">
+			<a href="" class="col-md-4 col-xl-3 activitiycard">
+				<div class="img-hover-zoom">
+					<img class="img-fluid" src="../assets/images/cards/01-whenharrymetsally.jpg" alt="Image not supported">
+					<div class="textabove">
+						<p style="display: inline">New York</p>
+						<p class="post"> <i class="fab fa-instagram pr-2" ></i>8.237</p>
+						<h5>OH GOD, YES, YEEEEESSSSS!</h5>
+						<p style="display: inline">When Harry Met Sally</p>
+						<p class="price">20,99 €</p>
+					</div>
+				</div>
+			</a>
+
+			<a href="" class="col-md-4 col-xl-3 activitiycard">
+				<div class="img-hover-zoom">
+					<img class="img-fluid" src="../assets/images/cards/01-whenharrymetsally.jpg" alt="Image not supported">
+					<div class="textabove">
+						<p style="display: inline">New York</p>
+						<p class="post"> <i class="fab fa-instagram pr-2" ></i>8.237</p>
+						<h5>OH GOD, YES, YEEEEESSSSS!</h5>
+						<p style="display: inline">When Harry Met Sally</p>
+						<p class="price">20,99 €</p>
+					</div>
+				</div>
+			</a>
+	 
+			<a href="" class="col-md-4 col-xl-3 activitiycard">
+				<div class="img-hover-zoom">
+					<img class="img-fluid" src="../assets/images/cards/01-whenharrymetsally.jpg" alt="Image not supported">
+					<div class="textabove">
+						<p style="display: inline">New York</p>
+						<p class="post"> <i class="fab fa-instagram pr-2" ></i>8.237</p>
+						<h5>OH GOD, YES, YEEEEESSSSS!</h5>
+						<p style="display: inline">When Harry Met Sally</p>
+						<p class="price">20,99 €</p>
+					</div>
+				</div>
+			</a>
+	 
+			<a href="" class="col-md-4 col-xl-3 activitiycard">
+				<div class="img-hover-zoom">
+					<img class="img-fluid" src="../assets/images/cards/01-whenharrymetsally.jpg" alt="Image not supported">
+					<div class="textabove">
+						<p style="display: inline">New York</p>
+						<p class="post"> <i class="fab fa-instagram pr-2" ></i>8.237</p>
+						<h5>OH GOD, YES, YEEEEESSSSS!</h5>
+						<p style="display: inline">When Harry Met Sally</p>
+						<p class="price">20,99 €</p>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+    <!--/.Third slide-->
+</div>
+<!--/.Slides-->	
+		
+		<div class="col-md-1 col-xl-1">
+			<a class="btn-floating" href="#multi-item-example" data-slide="next">
+				<img class="freccia" src="../assets/images/arrow-right.png" alt="Image not support">
+			</a>
+		</div>	
+		
+</div>			
+	  			</div>
+			</section>
+			
+		</main>
+	
+		<!--start Footer Area-->
+		<footer id="footer">		
+			<div class="container-fluid">
+				<div class="margin-fifty">
+					<div class="row">
+						<!--Juicy infos about us-->
+						<div class="about col-xl-3">
+							<h6>JUICY INFOS ABOUT US</h6>
+							<p>Set-jetters United is the one and only travel agency where you’ll find the most unique movie and TV series related activities. All of them are selected with the utmost care and love to provide you the very best experience ever.</p>
+						</div>
+					
+						<!--Contact-->
+						<div class="contact offset-xl-1 col-xl-3">
+							<h6>CONTACT</h6>
+							<p>Drop us a line at <a href="" id="info-email">info@setjettersunited.com</a></p>
+							<div class="social-icon">
+								<a href=""><img src="../assets/images/icon-fb.png" alt="Icon fb" id="icon-fb"/></a>
+								<a href=""><img src="../assets/images/icon-twitter.png" alt="Icon Twitter" id="icon-twitter"/></a>
+								<a href=""><img src="../assets/images/icon-ig.png" alt="Icon ig" id="icon-ig"/></a>
+							</div>
+						</div>
+					
+						<!--Keep up to date-->
+						<div class="newsletter col-xl-5">
+							<h6>KEEP UP TO DATE</h6>
+							<form>
+								<input type="text" id="enter-email" value="Enter your email here..." name="email">
+								<input type="submit" id="subscribe" value="SUBSCRIBE" name="subscribe">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	
+		<!-- links to Javascript files -->
+		<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../js/main.js"></script>
+		
+		<!-- link to FontAwesome -->
+   		<script src="https://kit.fontawesome.com/fe7d3f2655.js" crossorigin="anonymous"></script>
+		
+	</body>
+</html>
