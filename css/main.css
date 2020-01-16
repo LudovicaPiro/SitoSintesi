@@ -442,6 +442,12 @@ font-weight: 600;}
 /*Category section*/
 
 	/*Category selection*/
+
+	div a.categoryLinks{color: #F39200;}
+
+	p:hover a.categoryLinks{text-decoration: none;
+							color: white;}
+
 	.categorySelection {
 		margin-top: 0px;
 	}
