@@ -14,6 +14,22 @@
 
 //Hover category btn//
 $(document).ready(function(){	
+
+// purchase 
+
+$(".purchasebtn").click( function() {
+  //close the cart
+  $("#mySidenav").css("width", "0");
+ 
+  //open moralist page
+  $("#mySidemoral").css("width", "50%");
+ 
+
+ 
+});
+
+
+
 							 $(".whiteHover").hover(	
 							 							function(){$(".whiteHover").css({"color": "white", "border": "2px solid white" });
 							 										$(".categoryDescr").css("border-top-style", "none");
@@ -81,45 +97,24 @@ $(".show-more a").on("click", function() {
 });
 
 
-
-//Popup carello//
-function openNav() {
-	document.getElementById("mySidenav").style.width = "50%";
-	document.getElementById("main-content").style.opacity = "0.2";
-	document.getElementById("footer").style.opacity = "0.2";
-	document.getElementById("nav-content").style.opacity = "0.2";
-	document.body.style.backgroundColor = "rgb(0,0,0,0.8)";
-	document.getElementById("nav-content").style.backgroundColor = "rgb(0,0,0,0.8)";
-}
-
 function closeNav() {
-	document.getElementById("mySidenav").style.width = "0";
-  	document.getElementById("main-content").style.opacity = "1";
-	document.getElementById("footer").style.opacity = "1";
-	document.getElementById("nav-content").style.opacity = "1";
-	document.body.style.backgroundColor = "black";
-	document.getElementById("nav-content").style.backgroundColor = "black";
-}
-
-
-//Popup Moral//
-function openMoral() {
-	document.getElementById("mySidemoral").style.width = "50%";
-	document.getElementById("main-content").style.opacity = "0.2";
-	document.getElementById("footer").style.opacity = "0.2";
-	document.getElementById("nav-content").style.opacity = "0.2";
-	document.body.style.backgroundColor = "rgb(0,0,0,0.8)";
-	document.getElementById("nav-content").style.backgroundColor = "rgb(0,0,0,0.8)";
+  $("#mySidenav").css("width", "0");
+  $("#main-content, #footer, #nav-content").css("opacity", "1");
+  $("#body").css("background-color", "black");
 }
 
 function closeMoral() {
-	document.getElementById("mySidemoral").style.width = "0";
-  	document.getElementById("main-content").style.opacity = "1";
-	document.getElementById("footer").style.opacity = "1";
-	document.getElementById("nav-content").style.opacity = "1";
-	document.body.style.backgroundColor = "black";
-	document.getElementById("nav-content").style.backgroundColor = "black";
+  $("#mySidemoral").css("width", "0");
+  $("#main-content, #footer, #nav-content").css("opacity", "1");
+  $("#body, #nav-content").css("background-color", "black");
 }
+
+function openNav() {
+  $("#mySidenav").css("width", "50%");
+  $("#main-content, #footer, #nav-content").css("opacity", "0.2");
+  $("#body").css("background-color", "rgb(0,0,0,0.8)");
+}
+
 
 
 
