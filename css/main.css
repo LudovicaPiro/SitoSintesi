@@ -115,10 +115,15 @@ div a {
 }
 
 .cartcontent-moral {
-	opacity: 0;
-	transition: opacity .4s;
+	display: none;
+	/*transition: opacity .4s;*/
+}
+#cartcontent-cart{
+	display: none;
 }
 
+/*.cart-text{white-space: pre;
+			text-overflow: visible; }*/
 
 .cartelement  {padding-top: 10px;
 padding-bottom: 10px;}
