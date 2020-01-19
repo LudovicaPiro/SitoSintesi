@@ -30,7 +30,7 @@
 							<div class="row">
 								<a href="behindthescene.html" class="bar-menu offset-xl-4 col-xl-5">BEHIND THE SCENE
 								</a>
-								<a href="javascript:void(0)" class="bar-menu col-xl-3" onclick="openNav()">CART
+								<a href="javascript:void(0)" class="bar-menu col-xl-3 cartbtn" onclick="openNav()">CART
 									<img id="icon-backpack" src="../assets/images/icon-backpack.png" alt="Icon backpack"/>
 								</a>					
 							</div>
@@ -43,7 +43,7 @@
 		<!--CART POP-UP-->
 		<div id="mySidenav" class="sidenav">				
 			<div class="container-fluid">				  
-				<div class="cartcontent">
+				<div class="cartcontent" id="cartcontent-cart">
 					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 					<h3>CART</h3>
 								
@@ -86,7 +86,7 @@
 		<!--MORAL POP-UP-->
 		<div id="mySidemoral" class="sidemoral">				
 			<div class="container-fluid">				  
-				<div class="cartcontent">
+				<div class="cartcontent cartcontent-moral">
 					<a href="javascript:void(0)" class="closebtn" onclick="closeMoral()">&times;</a>
 					<h3 class="margincards">MORALIST PAGE</h3>
 
