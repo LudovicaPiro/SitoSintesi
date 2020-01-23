@@ -1,6 +1,5 @@
 // JavaScript Document
 
-//setTimeout(function(){jQuery('#dailyskins').fadeIn('show')}, 200);
 
   // navbar background color change on scroll
   $(window).scroll(function(){
@@ -14,11 +13,99 @@
     }
   })
 
+//variables
+//this list has to be completed with all the page names
+var listTour = ["01-pizza", "02-pizza"];
+var pageName;
+
+console.log("dd");
 
 $(document).ready(function(){	
 
+pageName= location.pathname.substring(location.pathname.lastIndexOf("/")+1);
+pageName= pageName.substring(0,pageName.lastIndexOf("."))
+console.log(pageName);
+
+CheckCartIcon();
+FillCart();
+
+// this function checks if the cart is full or empty and changes cart icon
+function CheckCartIcon() { 
+              var empty= true;
+
+              for (var i = 0; i < listTour.length; i++) {
+                                                            if (localStorage.getItem(listTour[i])== "true") 
+                                                                { 
+                                                                  console.log("c'è" + listTour[i]);
+                                                                  empty=false;
+                                                                }
+                                                        }
+
+            // Let's check if we are in the homepage!
+
+            var pathImgFull="../assets/images/icon-backpack-full.png";
+            var pathImgEmpty ="../assets/images/icon-backpack.png";
+
+            if(pageName=="index")
+            {
+              pathImgFull="assets/images/icon-backpack-full.png";
+              pathImgEmpty="assets/images/icon-backpack.png";
+            }
+
+
+              if(empty== true) {
+                $("#icon-backpack").attr('src',pathImgEmpty);}
+              else{$("#icon-backpack").attr('src',pathImgFull);}
+
+}
+
+
+function FillCart() {
+         for (var i = 0; i < listTour.length; i++) { 
+            if (localStorage.getItem(listTour[i])== "true") 
+                                                                { 
+                                                                  console.log("c'è" + listTour[i]);
+                                                                  $("#cartelement-"+listTour[i]).removeClass("cartelement-testclass");
+                                                                }
+                                                                else {
+                                                                  console.log("non c'è" + listTour[i]);
+                                                                  $("#cartelement-"+listTour[i]).addClass("cartelement-testclass");
+
+                                                                      }
+            }
+}
+
+
+/*$(".cartelement-x").click(function(){
+                                        if ($("#cartcontent-test, #cartcontent-test1").hasClass('cartelement-testclass')) 
+                                          {$("#icon-backpack").attr('src',"../assets/images/icon-backpack.png");} 
+
+                                        else {$("#icon-backpack").attr('src',"../assets/images/icon-backpack-full.png");}
+
+})*/
+
+//add to cart btn unhides elements
+$("#addCartbtn").click(function() {
+                                    
+                                    localStorage.setItem(pageName, "true");
+                                    CheckCartIcon();
+                                    FillCart();
+
+                                  }
+
+                      ); 
+
+//remove elements from cart
+$(".cartelement-x").click(function() {
+  var xSuffix=$(this).attr('id').substring($(this).attr('id').lastIndexOf("_")+1);
+                                      localStorage.removeItem(xSuffix);
+                                      CheckCartIcon();
+                                      FillCart();
+                                    }
+                           );
+
 //cart btn click makes text appear
-        $(".cartbtn").click(
+        $(".cartbtn, #addCartbtn").click(
                     function() {
 
                         $("#cartcontent-cart").delay(500).fadeIn(500,"linear" );
@@ -118,7 +205,7 @@ $(".show-more a").on("click", function() {
 function closeNav() {
   $("#mySidenav").css("width", "0");
   $("#main-content, #footer, #nav-content").css("opacity", "1");
-  $("#body").css("background-color", "black");
+  $("body").css("background-color", "black");
   $("#cartcontent-cart").fadeOut(100, "linear");
 
 }
@@ -126,14 +213,14 @@ function closeNav() {
 function closeMoral() {
   $("#mySidemoral").css("width", "0");
   $("#main-content, #footer, #nav-content").css("opacity", "1");
-  $("#body").css("background-color", "black");
+  $("body").css("background-color", "black");
   $(".cartcontent-moral").fadeOut(100, "linear");
 }
 
 function openNav() {
   $("#mySidenav").css("width", "50%");
   $("#main-content, #footer, #nav-content").css("opacity", "0.2");
-  $("#body").css("background-color", "rgb(0,0,0,0.8)");
+  $("body").css("background-color", "rgb(0,0,0,0.8)");
 }
 
 
