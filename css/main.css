@@ -118,7 +118,7 @@ div a {
 	display: none;
 	/*transition: opacity .4s;*/
 }
-#cartcontent-cart{
+#cartcontent-cart, #cartcontent-test1{
 	display: none;
 }
 
@@ -731,8 +731,11 @@ font-weight: 600;}
 /*———SINGLE TOUR PAGE————————————————————————————————————————————————————————————————————————————————*/
 
 .full-img {
-	opacity: 0.25;
+	opacity: 0.3;
 	position: fixed;
+	right: 0;
+	/*bottom: 0;*/	
+	width: 100%;
 	min-width: 100%;
 	min-height: 100%;
   	z-index: -100;
@@ -792,6 +795,37 @@ font-weight: 600;}
 	color: #FFFFFF;
 }
 
+
+#addCartbtn {
+	background-color: #F39200;
+	border: solid 2px #F39200;
+	color: #000;
+	font-weight: 600;
+	text-align: center;
+	padding: 3px;
+	align-items: center;
+}
+
+#addCartbtn:hover {
+	background-color: black;
+	border: solid 2px #F39200;
+	color: #F39200;
+	font-weight: 600;
+	text-decoration: none;
+	text-align: center;
+	padding: 3px;
+	align-items: center;
+}
+
+.cartelement-testclass{display: none;}
+
+.sidenav a.cartelement-x{
+	padding-top: 100px;
+    padding-right: 8px;
+    font-size: 50px;
+    text-align: right;
+    position: relative;
+  }
 
 /*Reviews*/
 
